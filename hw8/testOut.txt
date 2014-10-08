@@ -1,0 +1,4 @@
+Bart 30
+Homer 40
+Lisa 95
+Marge 80

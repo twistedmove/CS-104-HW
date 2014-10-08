@@ -1,0 +1,19 @@
+Running time analysis for my List class
+
+int size () const; 
+This has a big theta(N) because it will always have to walk to the end of the list to find out the number of elements.
+
+void insert (int position, const T & val);
+This function has a big theta(N). This is because while it calls size() a few times in the worst case, these are not nested inside each other. The worst case is that it will have to walk to the end of the list if position is size().
+
+void remove (int position);
+For the same reason as the insert function, this function has a big theta(N). The worst case is it will have to walk to the end of the list a few times but there are no nested loops. 
+
+void set (int position, const T & val);
+This also has a big theta(N) for the same reasons as above.
+
+T& get (int position) const;
+This also has a big theta(N) for the same reasons as above.
+
+void print () const;
+This also has a big theta(N) for the same reasons as above.

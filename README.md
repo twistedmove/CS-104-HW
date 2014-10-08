@@ -1,4 +1,7 @@
-CS-104-HW
-=========
+##CSCI 104 Data Structures Library Repository
 
-Homework assignments for CS-104 (data structures in c++)
+###Student Information
+  + Name: Kabir Gupta
+  + USC Email: kabirgup@usc.edu
+  + USC ID: 5957478548
+

@@ -1,0 +1,19 @@
+Running time analysis for my Map class
+
+int size () const;
+This has a big theta(N) because it is the same as calling the list class's size() function.
+
+void add (const keyType & newKey, const valueType & newValue);
+This function calls the map's find function and list's insert function. The map's find function has a big theta(N^2) as explained below, which takes precedence over the big theta(N) from the list's insert function. Therefore this function has a big theta(N^2).
+
+void remove (const keyType & given);
+This calls the map's find function, which has a big theta(N^2), and list's remove, which has a big theta(N). Therefore in the worst case this function has a big theta(N^2).
+
+valueType& get (const keyType & given) const;
+This calls the map's find function, which has a big theta(N^2), and list's get, which has a big theta(N). Therefore in the worst case this function has a big theta(N^2).
+
+int find (const keyType& given) const;
+This has the list class's get function, which has a big theta(N), inside a for loop which will have a worst case big theta(N). Therefore this function has a big theta(N^2).
+
+void print() const;
+This has a big theta(N) because it will always have to walk to the end of the list.

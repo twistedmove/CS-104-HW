@@ -1,0 +1,31 @@
+Part (a):
+The status of README.md is unmodified.
+
+Part (b):
+The status of README.md and fun_problem.txt are modified.
+
+Part (c):
+The status of README.md and fun_problem.txt are staged.
+
+Part (d):
+The status of README.md and fun_problem.txt are modified.
+
+Part (e):
+The status of README.md is staged and fun_problem.txt is unmodified. fun_problem.txt is empty because we discarded the changes to it with the checkout command.
+
+Part (f):
+README.md is modified because we added something to it without staging the file.
+
+Part (g):
+The TA's will see:
+![alt text](http://octodex.github.com/images/Professortocat_v2.png "Image Title")
+
+![Git File Lifecycle](git-file-lifecycle.png "Git File Lifecycle")
+>figure courtesy of the [Pro Git](http://git-scm.com/book) book by Scott Chacon
+
+because git gave the message:
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

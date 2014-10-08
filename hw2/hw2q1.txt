@@ -1,0 +1,20 @@
+Problem 1
+Part a:
+Every action line in a makefile must start with a:
+1. TAB
+
+Part b:
+make clean
+This will call the remove action on files in the current directory (ODIR and IDIR), which would include shape1 and shape2. 
+
+make shape1
+This would call the compiler (g++) to create object files from source files, in this case from the $@ variable which is the target (shape1) and $< which is shape1.cpp. It would also call the compiler to pass in CFLAGS, which is set as the options -std=c++11 and -ggdb.
+
+Part (c):
+What is the purpose of a .PHONY rule?
+This will prevent the make command from getting confused by an actual file called 'clean' and will let it run despite errors from rm.
+
+Part (d):
+What are acceptable names for a makefile? Select all that applies.
+2. Makefile
+4. makefile

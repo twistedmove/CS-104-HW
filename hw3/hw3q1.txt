@@ -1,0 +1,48 @@
+Part (b)
+What are the commands you used to place the break points?
+
+break main
+break factorial
+
+Part (c)
+Now, you need to figure out why all factorials are equal to zero.
+
+Explain in two sentences what the bug was.
+
+The for loop in factorial was setting num equal to 0 every time when it was called since it started at i=0.
+
+What are the sequence of commands (e.g. r, n, ..., print k, ...) you used to figure out the bug?
+
+r
+n
+n
+n
+n
+n
+print num
+
+Part (d)
+After fixing this problem, are the factorials correct?
+
+No
+
+Using gdb, debug the factorial() function to fix this bug.
+
+Explain in two sentences what the bug was.
+
+Since the loop was counting up to num and num was being updated after every iteration of the loop, the loop will never finish.
+
+What sequence of commands did you use this time?
+
+break factorial
+r
+n
+n
+n
+print num
+n
+n
+print num
+n
+n
+print num

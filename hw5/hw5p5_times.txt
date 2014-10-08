@@ -1,0 +1,10 @@
+Linked List front insert: 4.82525
+Linked List back insert: 14.467
+PlusOneArray front insert: 12.865
+PlusOneArray back insert: 10.5218
+PlusTenArray front insert: 4.01387
+PlusTenArray back insert: 0.606967
+DoublingArray front insert: 3.39495
+DoublingArray back insert: 0.000988
+
+The fastest front insert was from the DoublingArray. This also had the fastest back insert. I believe this is because it will have to resize fewer times for large inputs since it doubles in size with every resize, rather than adding one or ten. It is better than the linked list because the linked list must walk to the end of the list each time, whereas the array can simply insert at the index necessary.
